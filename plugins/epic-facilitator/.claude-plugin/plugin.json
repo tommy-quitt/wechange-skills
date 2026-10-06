@@ -2,5 +2,6 @@
   "name": "epic-facilitator",
   "description": "Guides practitioners one question at a time through an epic-readiness checklist and produces an implementation-ready Epic.",
   "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE",
   "author": { "name": "Tommy Q" }
 }
