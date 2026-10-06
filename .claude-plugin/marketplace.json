@@ -1,6 +1,7 @@
 {
   "name": "wechange-skills",
   "owner": { "name": "Tommy Q" },
+  "metadata": { "description": "WeChange skills for Claude Code" },
   "plugins": [
     {
       "name": "epic-facilitator",
