@@ -1,0 +1,27 @@
+# Ready Epic Checklist
+
+| Question | Topic |
+| :---- | :---- |
+| Is the purpose of the feature clear? Does the feature have acceptance criteria? What is the expected outcome of using this feature? (Impact on operations or workflows) What problem does it solve, or what value does it provide to users? Who are the primary users of this feature? Are all user personas considered? Are they admins, operators, or other stakeholders? | General Clarity and Purpose |
+| **What specific actions should the feature enable?** Are there tasks or workflows it must support? **What inputs does the feature require from users?** Are there default values, mandatory fields, or optional parameters? **What outputs or results should the feature provide?** Should it generate reports, logs, or feedback messages? **What configurations are necessary for this feature to function?** Are there dependencies on other system settings? | Functional requirements |
+| **How will users interact with this feature?** Through UI elements, APIs, command-line tools, etc.? **What are the key usability considerations?** Are there specific performance, responsiveness, or accessibility expectations? **What user feedback or error messages should the feature provide?** How will errors or issues be communicated to users? | User Experience |
+| Does this feature interact with other system components or external systems? What APIs, services, or databases does it rely on? What dependencies need to be in place for this feature to work?  Software libraries, external configurations, or other system features? | Integration and dependencies |
+| How shall we test the feature? Do we need to prepare special test data? Should R\&D expose a special API only for testing? What environments are best suited for testing? (Dev, QA, Production) If postponing performance or stress testing, have user stories been added? | Testability |
+| Can the feature be delivered independently to production? If dependent on another team, have they been invited to discovery, grooming or the sprint? Is UI involved? If yes, has the design team been consulted? | Independence |
+| Is architectural input required? If yes, was the architect involved in discovery and grooming? | Architecture |
+| Do we have any networking requirements (create firewall rules etc.)? Is networking in Dev, QA different from production? If yes \- add testing on production. | Network |
+| Do we have any risk requirements? Detection of abnormal behavior? Situations where the function should work differently because of risk considerations? | Risk |
+| What security measures are required? Encryption, authentication, or data masking? Who can access or use this feature? Are there role-based permissions or access restrictions? | Security and Permissions |
+| Do we have any performance requirements (there always are\!) Do we need to write stress/load testing scripts? Capacity requirements: Throughput – how many transactions at peak time do the system need to be able to handle Storage – (memory/disk) – the volume of data the system will page/persist at runtime to disk (if relevant) Year-on-year growth requirements (users, processing & storage) How does this feature scale with increased usage? Will it handle multiple simultaneous users or large data sets? *If you choose to postpone performance testing (not recommended\!) add user stories so that you do not forget* | Performance |
+| Should the function be audited? What data needs to be logged and where? Should the function write log entries? What log files and events are critical? | Auditability |
+| Should the function write log entries? To what log file? On what events? | Logging |
+| Is monitoring required? What data should be written for monitoring purposes? Where should monitoring data be stored? How often should monitoring data be updated? | Monitorability |
+| What is the required uptime? (Avoid specifying 100%) Should the function recover its last state? What is the recovery state? How often are backups needed? Is failure allowed? What is the acceptable Mean Time Between Failures (MTBF)? | Availability and Reliability |
+| Should the function/component recover with the last state? Should it keep state? What is the recovery state? How often should it keep a backup? If it does not have to recover, what happens when it starts (from scratch) | Recoverability |
+| Does the feature require specific installation steps? If this is an upgrade, what is the upgrade process? Have user stories been added for upgrade considerations? | Installation |
+| If this is an upgrade \- what is the upgrade process? Make sure to add user stories for the upgrade process | Upgradability |
+| **What are the rollout and deployment strategies?** Is this feature rolled out to all users at once or gradually? **What impact might this feature have on existing workflows?** Are there risks of disruption or conflicts with other system features? | Rollout |
+| Is data migration required? What data needs to be migrated? Are migration drills and tests planned? *Make sure to add user stories for migration and plan on migration drills and testing of migration before production* | Data Migration |
+| Does it need to work in different regions? Different time zones? Different languages? Different currencies? | Globalization |
+| How can this feature be extended or modified in the future? Are there hooks or plugins that facilitate future updates? | Future proofing |
+

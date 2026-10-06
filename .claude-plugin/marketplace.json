@@ -1,0 +1,11 @@
+{
+  "name": "wechange-skills",
+  "owner": { "name": "Tommy Q" },
+  "plugins": [
+    {
+      "name": "epic-facilitator",
+      "source": "./plugins/epic-facilitator",
+      "description": "Epic-readiness facilitator for product, discovery and agile practitioners."
+    }
+  ]
+}
